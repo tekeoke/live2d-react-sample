@@ -10,6 +10,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+      '@framework': path.resolve(__dirname, 'src/live2d/Framework/src')
+    }
   },
   module: {
     rules: [

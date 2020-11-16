@@ -2,17 +2,21 @@
   "compilerOptions": {
     "target": "es5",
     "moduleResolution": "node",
-    "allowJs": true,
-    "jsx": "react",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "removeComments": true,
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
-    "baseUrl": "./",
-    "paths": {
-      "@framework/*": ["./src/live2d/Framework/src/*"]
-    }
-  }
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "../Core/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
